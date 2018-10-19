@@ -8,7 +8,7 @@
     <ul>
       @foreach($movies as $oneMovie)
       <li>
-        {{ $oneMovie->getTitleAndRating() }}
+      <a href="/movies/detail/{{ $oneMovie->id }}">  {{ $oneMovie->getTitleAndRating() }}  </a>
       </li>
       @endforeach
     </ul>

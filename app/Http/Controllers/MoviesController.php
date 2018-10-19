@@ -48,7 +48,9 @@ class MoviesController extends Controller
      */
     public function show($id)
     {
-        //
+      $moviesId = Movie::find($id);
+
+      return view("movies.show")->with(compact("moviesId"));
     }
 
     /**
